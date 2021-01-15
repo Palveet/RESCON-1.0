@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+body {
+    background-image: url("rescon.png");
+    background-size: cover;
+}
+
+.bg-light {
+    background-color: #161616!important;
+}
+
+.navbar-brand {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: #FFFFFF!important;
+}
+
+.container {
+    padding-top: 9%;
+}
+
+footer {
+    background: #161616;
+}
+
+footer p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul .date {
+    margin-left: 20px;
+}
+
+li {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.list-type {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 61px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+ol,
+ul {
+    padding-left: 0rem;
+}
+
+.date {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    color: #F5D2FB;
+}
+
+.small {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.wel {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.mic {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #C797CF;
+}
