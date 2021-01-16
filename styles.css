@@ -26,6 +26,7 @@ body {
 
 footer {
     background: #161616;
+    height: 44px;
 }
 
 footer p {
@@ -113,4 +114,43 @@ ul {
     text-align: center;
     letter-spacing: 0.1em;
     color: #C797CF;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+
+/*wheel*/
+
+text {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    pointer-events: none;
+}
+
+#question {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: 0;
+    left: 520px;
+}
+
+#question h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
 }
