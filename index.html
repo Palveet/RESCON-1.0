@@ -58,19 +58,25 @@
             <div class="robo col-lg-6">
                 <img src="robo.png">
             </div>
-            <div class="row">
+            <div class="row row-2">
 
                 <h3 class="text-center">Spin the wheel and wait for your turn</h3>
-                <div class="col-lg-8 md-8 sm-12">
+                <div class="col-lg-8 md-12 sm-12">
 
                     <div id="chart"></div>
-                    <div id="question">
-                        <h1></h1>
-                    </div>
-
                 </div>
+                <div class="col-lg-4 md-12 sm-12">
+                    <div id="question">
+                        <h1 class="text-center"></h1>
+                        <h2 class="justify-content-center"></h2>
+                        <h3 class="justify-content-center"></h3>
+                        <h4></h4>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </div>
     </div>
 
     <footer class="page-footer">
@@ -99,44 +105,60 @@
             oldpick = [],
             color = ["rgba(138, 73, 149, 0.27)", "000"]
         var data = [{
-                "label": "Dell LAPTOP",
+                "label": "Team Pegasus",
                 "value": 1,
-                "question": "What CSS property is used for specifying the area between the content and its border?"
+                "title": "Fixing the train-test resolution discrepancy",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                "members": "Rishav Srijarko Anushka"
             }, // padding
             {
-                "label": "IMAC PRO",
+                "label": "Team Cygnus",
                 "value": 2,
-                "question": "What CSS property is used for changing the font?"
+                "title": "EfficientNet:Rethinking model scaling for convolutional neural networks",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                "members": "Prathamesh Swarnabha Yudhajeet"
             }, //font-family
             {
-                "label": "SUZUKI",
+                "label": "Team Lynx",
                 "value": 3,
-                "question": "What CSS property is used for changing the color of text?"
+                "title": "Residual attention network for Image Classifcation",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                "members": "Kunal Harshit Pranav"
             }, //color
             {
-                "label": "HONDA",
+                "label": "Team Crux",
                 "value": 4,
-                "question": "What CSS property is used for changing the boldness of text?"
+                "title": "AdaBins: Depth estimation using adaptive bins",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                "members": "Pranjal Aryan Aayush"
             }, //font-weight
             {
-                "label": "FERRARI",
+                "label": "Team Phoenix",
                 "value": 5,
-                "question": "What CSS property is used for changing the size of text?"
+                "title": "PaletteNet: Image Recolorization with given color palette",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                "members": "Abhishek Aakriti Saisha"
             }, //font-size
             {
-                "label": "APARTMENT",
+                "label": "Team Libra",
                 "value": 6,
-                "question": "What CSS property is used for changing the background color of a box?"
+                "title": "Text-Independent speaker verification using 3D convolutional neural networks",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                "members": "Rusali Devansh Irfhana"
             }, //background-color
             {
-                "label": "IPAD PRO",
+                "label": "Team Draco",
                 "value": 7,
-                "question": "Which word is used for specifying an HTML tag that is inside another tag?"
+                "title": "Transfer learning from speaker verification to multispeaker text to speech synthesis",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                "members": "Aradhya Paras Harsh"
             }, //nesting
             {
-                "label": "LAND",
+                "label": "Team Andromeda",
                 "value": 8,
-                "question": "Which side of the box is the third number in: margin:1px 1px 1px 1px; ?"
+                "title": "On the automatic generation of medical imaging reports",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                "members": "Sashrika Pooja Indira"
             }, //bottom
         ];
         var svg = d3.select('#chart')
@@ -220,7 +242,17 @@
                         .attr("fill", "#111");
                     //populate question
                     d3.select("#question h1")
-                        .text(data[picked].question);
+                        .text(data[picked].label);
+
+                    d3.select("#question h2")
+                        .text(data[picked].title);
+
+
+                    d3.select("#question h3")
+                        .text(data[picked].text);
+
+                    d3.select("#question h4")
+                        .text(data[picked].members);
                     oldrotation = rotation;
 
                     /* Get the result value from object "data" */

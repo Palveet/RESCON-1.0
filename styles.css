@@ -38,6 +38,7 @@ footer p {
     /* identical to box height */
     letter-spacing: 0.1em;
     color: #FFFFFF;
+    padding-top: 20px;
 }
 
 ul li {
@@ -130,27 +131,85 @@ h3 {
 /*wheel*/
 
 text {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 11px;
-    pointer-events: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
 }
 
 #question {
     position: absolute;
     width: 400px;
     height: 500px;
-    top: 0;
-    left: 520px;
+    top: 130%;
+    left: 60%;
+    width: 275px;
+    height: 321px;
+    background: linear-gradient(180deg, rgba(33, 14, 36, 0.67) 0%, rgba(22, 22, 22, 0.76) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 20px;
 }
 
 #question h1 {
-    font-size: 50px;
-    font-weight: bold;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    top: 50%;
+    margin: 55px 15px 15px;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+#question h2 {
+    margin: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #F5D2FB;
+}
+
+#question h3 {
+    margin: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    color: rgba(247, 247, 247, 0.54);
+}
+
+#question h4 {
+    margin: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgba(245, 210, 251, 0.48);
+    text-transform: uppercase;
+}
+
+#chart {
+    margin: 20px;
+}
+
+.row-2 h3 {
+    padding-top: 5%;
 }
