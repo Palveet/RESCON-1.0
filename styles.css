@@ -43,16 +43,12 @@ footer p {
     padding-top: 20px;
 }
 
-ul li {
-    display: inline-block;
-}
-
-ul .date {
+.date {
     margin-left: 20px;
     padding-left: 20px;
 }
 
-li {
+.li {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -71,11 +67,6 @@ li {
     letter-spacing: 0.1em;
     color: #FFFFFF;
     padding: 0 10px;
-}
-
-ol,
-ul {
-    padding-left: 0rem;
 }
 
 .date {
@@ -151,12 +142,14 @@ text {
     /*width: 1100px;
     height: 2000px;*/
     /*top: 130%;*/
-    top: 120%;/*110*/
+    top: 120%;
+    /*110*/
     left: 50%;
     /*width: 275px;
     height: 321px;*/
     width: 500px;
-    height: 400px;/*470px*/
+    height: 400px;
+    /*470px*/
     background: linear-gradient(180deg, rgba(33, 14, 36, 0.67) 0%, rgba(22, 22, 22, 0.76) 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
